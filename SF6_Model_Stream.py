@@ -1,22 +1,13 @@
 import logging
 import pandas as pd
 import numpy as np
-import matplotlib
 import matplotlib.pyplot as plt
 import sys
 from simple_salesforce import Salesforce
-from azure.cosmos import CosmosClient, exceptions
-from datetime import datetime, timedelta
 import collections
 import os
-import re
 import time
 import sys 
-from dotenv import load_dotenv
-from pathlib import Path  # Python 3.6+ only
-from tqdm import tqdm
-sys.path.insert(1, r'C:\Users\brh7189\OneDrive - Varian Medical Systems\Desktop\Useful modules Python') # read from Useful modules for Python
-import Class_SQL as SQL
 import streamlit as st
 import altair as alt
 
