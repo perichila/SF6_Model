@@ -20,14 +20,14 @@ import Class_SQL as SQL
 import streamlit as st
 import altair as alt
 
-DATASOURCE_SQL = os.environ["DataSource_SQL"]
-PASSWORD_SQL = os.environ["Password_SQL"]
-USERID_SQL = os.environ["UserID_SQL"]
+DATASOURCE_SQL = st.secrets["DataSource_SQL"]
+PASSWORD_SQL = st.secrets["Password_SQL"]
+USERID_SQL = st.secrets["UserID_SQL"]
 
-USER_SALES = os.environ['sf_user']
-PASSWORD=os.environ['sf_pass']
-TOKEN=os.environ['sf_token']
-USER_SPLUNK = os.environ["sp_user"]
+USER_SALES = st.secrets['sf_user']
+PASSWORD = st.secrets['sf_pass']
+TOKEN = st.secrets['sf_token']
+USER_SPLUNK = st.secrets["sp_user"]
 
 sf = Salesforce(username=USER_SALES,
                 password=PASSWORD,
